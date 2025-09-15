@@ -1,2 +1,7 @@
 
 GET http://localhost:3000/ Http/1.1
+
+###
+
+GET https://cse341-blue-2025.onrender.com  Http/1.1
+
