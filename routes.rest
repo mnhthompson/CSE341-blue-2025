@@ -1,0 +1,21 @@
+
+GET http://localhost:3000/ Http/1.1
+
+###
+
+GET https://cse341-blue-2025.onrender.com  Http/1.1
+
+
+// LOCALHOST 
+### 
+GET http://localhost:8080/contacts 
+### 
+GET http://localhost:8080/contacts/68cad8e3238ef20086847afb
+### 
+GET http://localhost:8080/contacts/68cad93e238ef20086847afc
+  ### 
+GET http://localhost:8080/contacts/68cad943238ef20086847afd
+// PRODUCTION Deploy
+
+
+
