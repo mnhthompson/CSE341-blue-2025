@@ -8,6 +8,7 @@
   "favoriteColor": "Blue",
   "birthday": " 01/01/2000"
 },
+
 {
   "_id": {
     "$oid": "68cad93e238ef20086847afc"
