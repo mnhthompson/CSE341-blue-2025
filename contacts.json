@@ -1,0 +1,30 @@
+[{
+  "_id": {
+    "$oid": "68cad8e3238ef20086847afb"
+  },
+  "firstName": "Ben",
+  "lastName": "Thompson",
+  "email": "benlawgeotho@gmail.com",
+  "favoriteColor": "Blue",
+  "birthday": " 01/01/2000"
+},
+{
+  "_id": {
+    "$oid": "68cad93e238ef20086847afc"
+  },
+  "firstName": "Trevor",
+  "lastName": "Thompson",
+  "email": "ttjt4567@gmail.com",
+  "favoriteColor": "Red",
+  "birthday": "02/02/2002"
+},
+{
+  "_id": {
+    "$oid": "68cad943238ef20086847afd"
+  },
+  "firstName": "emilee",
+  "lastName": "Thompson",
+  "email": "939496.et@gmail.com",
+  "favoriteColor": "Cyan",
+  "birthday": "03/03/2008"
+}]
