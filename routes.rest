@@ -1,11 +1,4 @@
 
-GET http://localhost:8080/ Http/1.1
-
-###
-
-GET https://cse341-blue-2025.onrender.com  Http/1.1
-
-
 // LOCALHOST 
 ### 
 GET http://localhost:8080/contacts 
@@ -26,12 +19,12 @@ content-type: application/json
 }
 
 ### DELETE contact (Replace_With_Joes_Id_Each_Time)
-DELETE http://localhost:8080/contacts/(Replace_With_Joes_Id_Each_Time) HTTP/1.1
+DELETE http://localhost:8080/contacts/68daa41d3d88a0a8d33da46a HTTP/1.1
 
 
 ### Update contact locally  (green)
 
-PUT http://localhost:8080/contacts/68cad943238ef20086847afd HTTP/1.1 
+PUT http://localhost:8080/contacts/68cad943238ef20086847afb HTTP/1.1 
 content-type: application/json
 
 {
@@ -62,13 +55,13 @@ content-type: application/json
 
 
 ### DELETE contact Production (Replace_With_Joes_Id_Each_Time)
-DELETE https://cse341-blue-2025.onrender.com/contacts/(Replace_With_Joes_Id_Each_Time) HTTP/1.1
+DELETE https://cse341-blue-2025.onrender.com/contacts/68daa5eb961f907e0f51246b HTTP/1.1
 
 
 
 
 ### Update contact Production
-PUT https://cse341-blue-2025.onrender.com/contacts/68cad943238ef20086847afd HTTP/1.1 
+PUT https://cse341-blue-2025.onrender.com/contacts/68cad943238ef20086847afb HTTP/1.1 
 content-type: application/json
 
 {

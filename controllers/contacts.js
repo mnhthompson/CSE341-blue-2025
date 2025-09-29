@@ -13,7 +13,6 @@ const getSingle = async (req, res, next) => {
   const userId = new ObjectId(req.params.id);
   const result = await mongodb
     .getDb()
-    
     .collection('contacts')
     .find({ _id: userId });
   result.toArray().then((lists) => {
@@ -21,6 +20,7 @@ const getSingle = async (req, res, next) => {
     res.status(200).json(lists[0]);
   });
 };
+
 // Update
 const updateContact = async (req, res) => {
   const userId = new ObjectId(req.params.id);
@@ -33,14 +33,13 @@ const updateContact = async (req, res) => {
   };
   const response = await mongodb
     .getDb()
-  
     .collection('contacts')
     .replaceOne({ _id: userId }, contact);
   console.log(response);
   if (response.modifiedCount > 0) {res.status(204).send();} 
-  else {res.status(500).json(response.error || 'error while Updating the contact.');
-  }};
-// Create
+  else {res.status(500).json(response.error || 'error while Updating the contact.');}};
+
+  // Create
 const createContact = async (req, res) => {
   const contact = {
     firstName: req.body.firstName,
@@ -56,13 +55,14 @@ const createContact = async (req, res) => {
   if (response.acknowledged) {res.status(201).json(response);} 
   else {res.status(500).json(response.error || 'error while creating the contact.');}};
 
-// Delete
+
+  // Delete
 const deleteContact = async (req, res) => {
   const userId = new ObjectId(req.params.id);
   const response = await mongodb
     .getDb()
     .collection('contacts')
-    .remove({ _id: userId }, true);
+    .deleteOne({ _id: userId });
   console.log(response);
   if (response.deletedCount > 0) {res.status(204).send();} 
   else {res.status(500).json(response.error || 'error while deleating the contact.');}};
